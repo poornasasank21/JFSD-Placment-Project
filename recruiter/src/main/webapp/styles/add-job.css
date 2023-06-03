@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.cdnfonts.com/css/roblox-new');
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+
+/*
+font-family: 'SF Mono', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Gotham Black', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #232427;
+}
+
+header li, header a, header button {
+    font-family: 'SF Mono', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header .logo a {
+    cursor: pointer;
+    height: 5%;
+    width: 5%;
+    font-family: 'Monoton', cursive;
+    color: azure;
+    font-size: 250%;
+    user-select: none;
+    text-decoration: none;
+}
+
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header .nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+header .nav-links li a:hover {
+    color: #0088a9;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 54%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: azure;
+	font-family: 'SF Mono', sans-serif;
+}
+
+.flex-item {
+	text-align: center;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
+.flex-item:first-child {
+	font-family: 'Gotham Black', sans-serif;
+	font-size: xx-large;
+}
+
+.flex-container .flex-item a, a:visited {
+	color: azure;
+	transition: all 0.3s ease 0s;	
+	text-decoration: none;
+}
+
+.flex-container .flex-item a:hover {
+	color: #0088a9;
+	text-decoration: none;
+}
+
+.inner-flex {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.inner-flex button {
+	padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    font-family: 'SF Mono', sans-serif;
+    color: azure;
+}
+
+.inner-flex button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.input-box {
+	position: relative;
+	width: 250px;
+}
+
+.input-box input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	background: #2a2b2f;
+	border-radius: 5px;
+	outline: none;
+	color: #fff;
+	font-size: 1em;
+}
+
+.input-box span {
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: rgba(255, 255, 255, 0.25);
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+/*.input-box input:valid ~ span,
+.input-box input:focus ~ span**/
+.input-box input ~ span {
+	color: azure;
+	transform: translateX(10px) translateY(-7px);
+	font-size: 0.65em;
+	padding: 0 10px;
+	background: #2a2b2f;
+	border-left: 1px solid #0088a9;
+	border-right: 1px solid #0088a9;
+	letter-spacing: 0.2em;
+}

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.cdnfonts.com/css/roblox-new');
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #232427;
+}
+
+header li, header a, header button {
+    font-family: 'SF Mono', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo a{
+    cursor: pointer;
+    height: 5%;
+    width: 5%;
+    font-family: 'Monoton', cursive;
+    color: azure;
+    font-size: 250%;
+    user-select: none;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #0088a9;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+#main {
+    user-select: none;
+}
+
+#main .heading{
+    text-align: center;
+    margin-top: 10%;
+    color: aliceblue;
+    font-family: 'Gotham Black', sans-serif;
+    font-size: 250%;
+}
+
+#main .tagline {
+    padding-left: 39%;
+    padding-right: 39%;
+    margin-top: 1%;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'SF Mono', sans-serif;
+}

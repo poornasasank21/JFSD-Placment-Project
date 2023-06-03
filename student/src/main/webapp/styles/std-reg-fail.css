@@ -1,0 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+@import url('https://fonts.cdnfonts.com/css/roblox-new');
+
+body {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -75%);
+	background-color: #232427;
+	color: azure;
+	font-family: 'SF Mono', sans-serif;
+	text-align: center;
+	
+}
+
+a, a:visited {
+	color: azure;
+	text-decoration: none;
+}
+
+a:hover {
+	transition: all 0.3s ease 0s;
+	color: #0088a9;
+}
+
+p:first-child {
+	font-family: 'Gotham Black', sans-serif;
+	text-transform: uppercase;
+}

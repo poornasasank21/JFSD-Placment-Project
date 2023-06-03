@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.cdnfonts.com/css/roblox-new');
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+
+/*
+font-family: 'SF Mono', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Gotham Black', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #232427;
+}
+
+header li, header a, header button {
+    font-family: 'SF Mono', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header .logo a {
+    cursor: pointer;
+    height: 5%;
+    width: 5%;
+    font-family: 'Monoton', cursive;
+    color: azure;
+    font-size: 250%;
+    user-select: none;
+    text-decoration: none;
+}
+
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header .nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+header .nav-links li a:hover {
+    color: #0088a9;
+}
+
+header button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    background: rgba(0, 136, 169, 1);
+}
+
+header button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: auto;
+	top: 35%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	font-family: 'SF Mono', sans-serif;
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+	border: 1.5px solid grey;
+}
+
+th {
+	text-transform: uppercase;
+	background: rgba(0, 136, 169, 1);
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
